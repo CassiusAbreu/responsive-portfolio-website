@@ -374,3 +374,8 @@
     .bout__button{
         display: flex;
     }
+
+    .about__buttons{
+        display:flex;
+        justify-content: center;
+    }
