@@ -17,7 +17,7 @@
     --text-color: hsl(var(--hue-color),8%,45%);
     --text-color-light: hsl(var(--hue-color),8%,65%);
     --input-color: hsl(var(--hue-color),70%,96%);
-    --body-color:hsl(var(var(--hue-color),60%,99%));
+    --body-color:hsl(var(--hue-color),60%,99%);
     --container-color: #fff;
 
     /*================== Font and typography =================*/
@@ -39,7 +39,7 @@
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
-    --m-0-75: .75rem;
+    --mb-0-75: .75rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
@@ -165,7 +165,7 @@
         color: var(--first-color);
     }
 
-    .nav__toggle {
+    .nav__toggle{
         font-size: 1.1rem;
         cursor: pointer;
     }
@@ -378,4 +378,88 @@
     .about__buttons{
         display:flex;
         justify-content: center;
+    }
+
+    /*================================== SKILLS ===================================*/
+    .skills__container{
+       row-gap: 0;
+    }
+
+    .skills__header{
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--mb-2-5);
+        cursor: pointer;
+    }
+
+    .skills__icon,
+    .skills__arrow{
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+
+    .skills__icon{
+        margin-right: var(--mb-0-75);
+    }
+    
+
+    .skills__title{
+        font-size: var(--h3-font-size);
+    }
+
+    .skills__subtitle{
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+    }
+
+    .skills_arrow{
+        margin-left: auto;
+        transition: .4s;
+    }
+
+    .skills__list{
+        row-gap: 1.5rem;
+        padding-left: 2.7rem;
+    }
+
+    .skills__titles{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--mb-0-5)
+    }
+
+    .skills__name{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    .skills__bar,
+    .skills__percentage{
+        height: 5px;
+        border-radius: .25rem;
+    }
+
+    .skills__bar{
+        background-color: var(--first-color-lighter);
+    }
+
+    .skills__percentage{
+        display: block;
+        background-color: var(--first-color);
+    }
+
+    .skills__html{
+        width: 90%;
+    }
+
+    .skills__css{
+        width: 80%;
+    }
+
+    .skills__js{
+        width: 60%;
+    }
+
+    .skills__react{
+        width: 85%;
     }
