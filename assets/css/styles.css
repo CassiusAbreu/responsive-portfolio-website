@@ -1282,7 +1282,7 @@
         margin-top: 4.5rem;
     }
 }
-/*  For Large devices */
+/*  For Large devices  ============  */
 @media screen and (min-width: 1024px) {
     .header,
     .main,
